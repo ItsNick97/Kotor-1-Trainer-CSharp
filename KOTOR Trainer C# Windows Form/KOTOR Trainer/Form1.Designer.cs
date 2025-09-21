@@ -37,6 +37,13 @@
             button2 = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            button71 = new Button();
+            textBox5 = new TextBox();
+            label49 = new Label();
+            button70 = new Button();
+            textBox4 = new TextBox();
+            label48 = new Label();
+            button69 = new Button();
             button28 = new Button();
             textBox3 = new TextBox();
             label7 = new Label();
@@ -203,10 +210,13 @@
             button64 = new Button();
             label43 = new Label();
             comboBox39 = new ComboBox();
+            tabPage8 = new TabPage();
+            button72 = new Button();
+            label50 = new Label();
+            comboBox44 = new ComboBox();
             textBox2 = new TextBox();
             label3 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
-            button69 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -215,6 +225,7 @@
             tabPage5.SuspendLayout();
             tabPage6.SuspendLayout();
             tabPage7.SuspendLayout();
+            tabPage8.SuspendLayout();
             SuspendLayout();
             // 
             // backgroundWorker1
@@ -247,7 +258,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(78, 50);
+            checkBox1.Location = new Point(78, 10);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(102, 24);
             checkBox1.TabIndex = 2;
@@ -257,9 +268,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(320, 43);
+            button2.Location = new Point(366, 19);
             button2.Name = "button2";
-            button2.Size = new Size(158, 27);
+            button2.Size = new Size(159, 27);
             button2.TabIndex = 6;
             button2.Text = "100 Computer Spikes";
             button2.UseVisualStyleBackColor = true;
@@ -274,6 +285,7 @@
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPage6);
             tabControl1.Controls.Add(tabPage7);
+            tabControl1.Controls.Add(tabPage8);
             tabControl1.Location = new Point(6, 32);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
@@ -282,6 +294,12 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(button71);
+            tabPage1.Controls.Add(textBox5);
+            tabPage1.Controls.Add(label49);
+            tabPage1.Controls.Add(button70);
+            tabPage1.Controls.Add(textBox4);
+            tabPage1.Controls.Add(label48);
             tabPage1.Controls.Add(button69);
             tabPage1.Controls.Add(button28);
             tabPage1.Controls.Add(textBox3);
@@ -324,9 +342,73 @@
             tabPage1.Text = "Self + Account";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button71
+            // 
+            button71.Location = new Point(20, 265);
+            button71.Name = "button71";
+            button71.Size = new Size(158, 27);
+            button71.TabIndex = 57;
+            button71.Text = "Send";
+            button71.UseVisualStyleBackColor = true;
+            button71.Click += button71_Click;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(20, 232);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(158, 27);
+            textBox5.TabIndex = 56;
+            textBox5.TextChanged += textBox5_TextChanged;
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Location = new Point(40, 295);
+            label49.Name = "label49";
+            label49.Size = new Size(117, 20);
+            label49.TabIndex = 55;
+            label49.Text = "Send Feat Points";
+            // 
+            // button70
+            // 
+            button70.Location = new Point(184, 171);
+            button70.Name = "button70";
+            button70.Size = new Size(158, 27);
+            button70.TabIndex = 54;
+            button70.Text = "Send";
+            button70.UseVisualStyleBackColor = true;
+            button70.Click += button70_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(184, 138);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(158, 27);
+            textBox4.TabIndex = 53;
+            textBox4.TextChanged += textBox4_TextChanged;
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.Location = new Point(204, 201);
+            label48.Name = "label48";
+            label48.Size = new Size(116, 20);
+            label48.TabIndex = 52;
+            label48.Text = "Send Skill Points";
+            // 
+            // button69
+            // 
+            button69.Location = new Point(366, 419);
+            button69.Name = "button69";
+            button69.Size = new Size(159, 27);
+            button69.TabIndex = 51;
+            button69.Text = "Give Repair Kit";
+            button69.UseVisualStyleBackColor = true;
+            button69.Click += button69_Click;
+            // 
             // button28
             // 
-            button28.Location = new Point(78, 302);
+            button28.Location = new Point(184, 265);
             button28.Name = "button28";
             button28.Size = new Size(158, 27);
             button28.TabIndex = 50;
@@ -336,7 +418,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(78, 269);
+            textBox3.Location = new Point(184, 232);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(158, 27);
             textBox3.TabIndex = 49;
@@ -345,7 +427,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(78, 332);
+            label7.Location = new Point(184, 295);
             label7.Name = "label7";
             label7.Size = new Size(136, 20);
             label7.TabIndex = 48;
@@ -354,9 +436,9 @@
             // 
             // button24
             // 
-            button24.Location = new Point(484, 375);
+            button24.Location = new Point(530, 351);
             button24.Name = "button24";
-            button24.Size = new Size(158, 27);
+            button24.Size = new Size(159, 27);
             button24.TabIndex = 47;
             button24.Text = "Persuade Points";
             button24.UseVisualStyleBackColor = true;
@@ -364,9 +446,9 @@
             // 
             // button23
             // 
-            button23.Location = new Point(484, 342);
+            button23.Location = new Point(530, 318);
             button23.Name = "button23";
-            button23.Size = new Size(158, 27);
+            button23.Size = new Size(159, 27);
             button23.TabIndex = 46;
             button23.Text = "Repair Points";
             button23.UseVisualStyleBackColor = true;
@@ -374,9 +456,9 @@
             // 
             // button22
             // 
-            button22.Location = new Point(484, 309);
+            button22.Location = new Point(530, 285);
             button22.Name = "button22";
-            button22.Size = new Size(158, 27);
+            button22.Size = new Size(159, 27);
             button22.TabIndex = 45;
             button22.Text = "Security Points";
             button22.UseVisualStyleBackColor = true;
@@ -384,9 +466,9 @@
             // 
             // button21
             // 
-            button21.Location = new Point(484, 276);
+            button21.Location = new Point(530, 252);
             button21.Name = "button21";
-            button21.Size = new Size(158, 27);
+            button21.Size = new Size(159, 27);
             button21.TabIndex = 44;
             button21.Text = "Strength Points";
             button21.UseVisualStyleBackColor = true;
@@ -394,9 +476,9 @@
             // 
             // button20
             // 
-            button20.Location = new Point(484, 243);
+            button20.Location = new Point(530, 219);
             button20.Name = "button20";
-            button20.Size = new Size(158, 27);
+            button20.Size = new Size(159, 27);
             button20.TabIndex = 43;
             button20.Text = "Dexterity Points";
             button20.UseVisualStyleBackColor = true;
@@ -404,9 +486,9 @@
             // 
             // button19
             // 
-            button19.Location = new Point(484, 210);
+            button19.Location = new Point(530, 186);
             button19.Name = "button19";
-            button19.Size = new Size(158, 27);
+            button19.Size = new Size(159, 27);
             button19.TabIndex = 42;
             button19.Text = "Constitution Points";
             button19.UseVisualStyleBackColor = true;
@@ -414,9 +496,9 @@
             // 
             // button18
             // 
-            button18.Location = new Point(484, 177);
+            button18.Location = new Point(530, 153);
             button18.Name = "button18";
-            button18.Size = new Size(158, 27);
+            button18.Size = new Size(159, 27);
             button18.TabIndex = 41;
             button18.Text = "Intelligence Points";
             button18.UseVisualStyleBackColor = true;
@@ -424,9 +506,9 @@
             // 
             // button17
             // 
-            button17.Location = new Point(484, 144);
+            button17.Location = new Point(530, 120);
             button17.Name = "button17";
-            button17.Size = new Size(158, 27);
+            button17.Size = new Size(159, 27);
             button17.TabIndex = 40;
             button17.Text = "Wisdom Points";
             button17.UseVisualStyleBackColor = true;
@@ -434,9 +516,9 @@
             // 
             // button16
             // 
-            button16.Location = new Point(484, 111);
+            button16.Location = new Point(530, 87);
             button16.Name = "button16";
-            button16.Size = new Size(158, 27);
+            button16.Size = new Size(159, 27);
             button16.TabIndex = 39;
             button16.Text = "Charisma Points";
             button16.UseVisualStyleBackColor = true;
@@ -444,9 +526,9 @@
             // 
             // button15
             // 
-            button15.Location = new Point(484, 78);
+            button15.Location = new Point(530, 54);
             button15.Name = "button15";
-            button15.Size = new Size(158, 27);
+            button15.Size = new Size(159, 27);
             button15.TabIndex = 38;
             button15.Text = "Awareness Points";
             button15.UseVisualStyleBackColor = true;
@@ -454,9 +536,9 @@
             // 
             // button14
             // 
-            button14.Location = new Point(484, 43);
+            button14.Location = new Point(530, 19);
             button14.Name = "button14";
-            button14.Size = new Size(158, 27);
+            button14.Size = new Size(159, 27);
             button14.TabIndex = 37;
             button14.Text = "Stealth Points";
             button14.UseVisualStyleBackColor = true;
@@ -464,9 +546,9 @@
             // 
             // button13
             // 
-            button13.Location = new Point(320, 410);
+            button13.Location = new Point(366, 386);
             button13.Name = "button13";
-            button13.Size = new Size(158, 27);
+            button13.Size = new Size(159, 27);
             button13.TabIndex = 36;
             button13.Text = "Demolitions Points";
             button13.UseVisualStyleBackColor = true;
@@ -474,9 +556,9 @@
             // 
             // button12
             // 
-            button12.Location = new Point(320, 377);
+            button12.Location = new Point(366, 353);
             button12.Name = "button12";
-            button12.Size = new Size(158, 27);
+            button12.Size = new Size(159, 27);
             button12.TabIndex = 35;
             button12.Text = "Computer Use Points";
             button12.UseVisualStyleBackColor = true;
@@ -484,9 +566,9 @@
             // 
             // button11
             // 
-            button11.Location = new Point(484, 408);
+            button11.Location = new Point(530, 384);
             button11.Name = "button11";
-            button11.Size = new Size(158, 27);
+            button11.Size = new Size(159, 27);
             button11.TabIndex = 34;
             button11.Text = "Treat Injury Points";
             button11.UseVisualStyleBackColor = true;
@@ -494,9 +576,9 @@
             // 
             // button10
             // 
-            button10.Location = new Point(320, 344);
+            button10.Location = new Point(366, 320);
             button10.Name = "button10";
-            button10.Size = new Size(158, 27);
+            button10.Size = new Size(159, 27);
             button10.TabIndex = 33;
             button10.Text = "Add Dark Side";
             button10.UseVisualStyleBackColor = true;
@@ -504,9 +586,9 @@
             // 
             // button9
             // 
-            button9.Location = new Point(320, 311);
+            button9.Location = new Point(366, 287);
             button9.Name = "button9";
-            button9.Size = new Size(158, 27);
+            button9.Size = new Size(159, 27);
             button9.TabIndex = 32;
             button9.Text = "Add Light Side ";
             button9.UseVisualStyleBackColor = true;
@@ -514,9 +596,9 @@
             // 
             // button8
             // 
-            button8.Location = new Point(320, 278);
+            button8.Location = new Point(366, 254);
             button8.Name = "button8";
-            button8.Size = new Size(158, 27);
+            button8.Size = new Size(159, 27);
             button8.TabIndex = 31;
             button8.Text = "Add 1 Level";
             button8.UseVisualStyleBackColor = true;
@@ -524,9 +606,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(320, 245);
+            button7.Location = new Point(366, 221);
             button7.Name = "button7";
-            button7.Size = new Size(158, 27);
+            button7.Size = new Size(159, 27);
             button7.TabIndex = 30;
             button7.Text = "Add 10K EXP";
             button7.UseVisualStyleBackColor = true;
@@ -534,7 +616,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(78, 203);
+            button1.Location = new Point(20, 171);
             button1.Name = "button1";
             button1.Size = new Size(158, 27);
             button1.TabIndex = 29;
@@ -544,7 +626,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(78, 170);
+            textBox1.Location = new Point(20, 138);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(158, 27);
             textBox1.TabIndex = 28;
@@ -553,7 +635,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(78, 236);
+            label2.Location = new Point(20, 204);
             label2.Name = "label2";
             label2.Size = new Size(148, 20);
             label2.TabIndex = 27;
@@ -563,7 +645,7 @@
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(78, 80);
+            checkBox4.Location = new Point(78, 40);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(136, 24);
             checkBox4.TabIndex = 15;
@@ -573,9 +655,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(320, 212);
+            button6.Location = new Point(366, 188);
             button6.Name = "button6";
-            button6.Size = new Size(158, 27);
+            button6.Size = new Size(159, 27);
             button6.TabIndex = 14;
             button6.Text = "99 Parts";
             button6.UseVisualStyleBackColor = true;
@@ -583,9 +665,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point(320, 177);
+            button5.Location = new Point(366, 153);
             button5.Name = "button5";
-            button5.Size = new Size(158, 27);
+            button5.Size = new Size(159, 27);
             button5.TabIndex = 13;
             button5.Text = "100 Repair Kits";
             button5.UseVisualStyleBackColor = true;
@@ -593,9 +675,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(320, 113);
+            button4.Location = new Point(366, 89);
             button4.Name = "button4";
-            button4.Size = new Size(158, 58);
+            button4.Size = new Size(159, 58);
             button4.TabIndex = 12;
             button4.Text = "100 Advanced MedPak";
             button4.UseVisualStyleBackColor = true;
@@ -603,9 +685,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(320, 78);
+            button3.Location = new Point(366, 54);
             button3.Name = "button3";
-            button3.Size = new Size(158, 27);
+            button3.Size = new Size(159, 27);
             button3.TabIndex = 11;
             button3.Text = "Reveal Map";
             button3.UseVisualStyleBackColor = true;
@@ -614,7 +696,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(78, 140);
+            checkBox3.Location = new Point(78, 100);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(158, 24);
             checkBox3.TabIndex = 10;
@@ -625,7 +707,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(78, 110);
+            checkBox2.Location = new Point(78, 70);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(113, 24);
             checkBox2.TabIndex = 9;
@@ -2071,6 +2153,48 @@
             comboBox39.TabIndex = 15;
             comboBox39.SelectedIndexChanged += comboBox39_SelectedIndexChanged;
             // 
+            // tabPage8
+            // 
+            tabPage8.Controls.Add(button72);
+            tabPage8.Controls.Add(label50);
+            tabPage8.Controls.Add(comboBox44);
+            tabPage8.Location = new Point(4, 29);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Padding = new Padding(3);
+            tabPage8.Size = new Size(720, 485);
+            tabPage8.TabIndex = 8;
+            tabPage8.Text = "Grenades + Mines";
+            tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // button72
+            // 
+            button72.Location = new Point(97, 118);
+            button72.Name = "button72";
+            button72.Size = new Size(138, 28);
+            button72.TabIndex = 20;
+            button72.Text = "Send Utility Item";
+            button72.UseVisualStyleBackColor = true;
+            button72.Click += button72_Click;
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.Location = new Point(105, 61);
+            label50.Name = "label50";
+            label50.Size = new Size(71, 20);
+            label50.TabIndex = 19;
+            label50.Text = "Grenades";
+            // 
+            // comboBox44
+            // 
+            comboBox44.FormattingEnabled = true;
+            comboBox44.Items.AddRange(new object[] { "CryoBan Grenade", "ION Grenade" });
+            comboBox44.Location = new Point(78, 84);
+            comboBox44.Name = "comboBox44";
+            comboBox44.Size = new Size(190, 28);
+            comboBox44.TabIndex = 18;
+            comboBox44.SelectedIndexChanged += comboBox44_SelectedIndexChanged;
+            // 
             // textBox2
             // 
             textBox2.Location = new Point(736, 61);
@@ -2094,16 +2218,6 @@
             // timer1
             // 
             timer1.Tick += timer1_Tick;
-            // 
-            // button69
-            // 
-            button69.Location = new Point(320, 443);
-            button69.Name = "button69";
-            button69.Size = new Size(158, 27);
-            button69.TabIndex = 51;
-            button69.Text = "Give Repair Kit";
-            button69.UseVisualStyleBackColor = true;
-            button69.Click += button69_Click;
             // 
             // Form1
             // 
@@ -2136,6 +2250,8 @@
             tabPage6.PerformLayout();
             tabPage7.ResumeLayout(false);
             tabPage7.PerformLayout();
+            tabPage8.ResumeLayout(false);
+            tabPage8.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2319,5 +2435,15 @@
         private ComboBox comboBox43;
         private System.Windows.Forms.Timer timer1;
         private Button button69;
+        private Button button70;
+        private TextBox textBox4;
+        private Label label48;
+        private Button button71;
+        private TextBox textBox5;
+        private Label label49;
+        private TabPage tabPage8;
+        private Button button72;
+        private Label label50;
+        private ComboBox comboBox44;
     }
 }

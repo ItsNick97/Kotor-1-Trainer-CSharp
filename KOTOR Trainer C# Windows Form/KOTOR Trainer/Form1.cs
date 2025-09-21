@@ -773,7 +773,13 @@ namespace KOTOR_Trainer
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            m.WriteMemory("swkotor.exe+004305CC,4C, 100, C, 20, 48, 3A0", "int", textBox1.Text);
+            Process[] ps = Process.GetProcessesByName("swkotor");
+            Process KotorProcess = ps.FirstOrDefault();
+            if (KotorProcess != null)
+            {
+                m.WriteMemory("swkotor.exe+004305CC,4C, 100, C, 20, 48, 3A0", "int", textBox1.Text);
+                textBox2.AppendText(textBox1.Text + " Skill Points Have Been Sent");
+            }
 
         }
 
@@ -9472,12 +9478,12 @@ namespace KOTOR_Trainer
         {
             try
             {
+                Thread.Sleep(1000);
                 m.WriteMemory("swkotor.exe+003B93B0, 0, 4, 20, 0, 1AC, F8, DC", "int", "100");
-                Thread.Sleep(10);
+                Thread.Sleep(1000);
                 m.WriteMemory("swkotor.exe+003B93B0, 4, 188, 30, 24, 1AC, F8, DC", "int", "100");
-                Thread.Sleep(10);
+                Thread.Sleep(1000);
                 m.WriteMemory("swkotor.exe+003B93B0, 4, 1AC, 42C, 24, F8, 10C, DC", "int", "100");
-
             }
             catch (Exception ex)
             {
@@ -9510,6 +9516,96 @@ namespace KOTOR_Trainer
                 SendKeys.Send("{ENTER}");
                 textBox2.AppendText("Repair Kit Given!");
             }
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            Process[] ps = Process.GetProcessesByName("swkotor");
+            Process KotorProcess = ps.FirstOrDefault();
+            if (KotorProcess != null)
+            {
+                IntPtr h = KotorProcess.MainWindowHandle;
+                SetForegroundWindow(h);
+                m.WriteMemory("base + 003A39F4, 94, 4, 64, 414, 24, 2F8, AE", "int", textBox4.Text);
+                textBox2.AppendText(textBox4.Text + " Skill Points Have Been Sent");
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            Process[] ps = Process.GetProcessesByName("swkotor");
+            Process KotorProcess = ps.FirstOrDefault();
+            if (KotorProcess != null)
+            {
+                IntPtr h = KotorProcess.MainWindowHandle;
+                SetForegroundWindow(h);
+                m.WriteMemory("base + 00433BB4, 144, 148, C8, 18, 88, 14, 19F2", "int", textBox5.Text);
+                textBox2.AppendText(textBox5.Text + " Feat Points Have Been Sent");
+            }
+        }
+
+        private void button72_Click(object sender, EventArgs e)
+        {
+            if (comboBox44.SelectedIndex == 0)
+            {
+                Process[] ps = Process.GetProcessesByName("swkotor");
+                Process KotorProcess = ps.FirstOrDefault();
+                if (KotorProcess != null)
+                {
+                    IntPtr h = KotorProcess.MainWindowHandle;
+                    SetForegroundWindow(h);
+                    SendKeys.SendWait("{`}");
+                    Thread.Sleep(300);
+                    m.WriteMemory("base + 00434460, 3C, EAC", "String", "giveitem g_w_cryobgren001");
+                    Thread.Sleep(300);
+                    SendKeys.Send("{ENTER}");
+                    Thread.Sleep(200);
+                    SendKeys.Send("{`}");
+                    Thread.Sleep(200);
+                    m.WriteMemory("base + 00434460, 3C, EAC", "String", new string('\0', 32));
+                    Thread.Sleep(300);
+                    SendKeys.Send("{ENTER}");
+                    textBox2.AppendText("CryoBan Grenade Sent!");
+                }
+            }
+            else if (comboBox44.SelectedIndex == 1)
+            {
+                Process[] ps = Process.GetProcessesByName("swkotor");
+                Process KotorProcess = ps.FirstOrDefault();
+                if (KotorProcess != null)
+                {
+                    IntPtr h = KotorProcess.MainWindowHandle;
+                    SetForegroundWindow(h);
+                    SendKeys.SendWait("{`}");
+                    Thread.Sleep(300);
+                    m.WriteMemory("base + 00434460, 3C, EAC", "String", "giveitem g_w_iongren01");
+                    Thread.Sleep(300);
+                    SendKeys.Send("{ENTER}");
+                    Thread.Sleep(200);
+                    SendKeys.Send("{`}");
+                    Thread.Sleep(200);
+                    m.WriteMemory("base + 00434460, 3C, EAC", "String", new string('\0', 32));
+                    Thread.Sleep(300);
+                    SendKeys.Send("{ENTER}");
+                    textBox2.AppendText("ION Grenade Sent!");
+                }
+            }
+
+        }
+
+        private void comboBox44_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
