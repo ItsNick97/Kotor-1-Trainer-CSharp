@@ -1,16 +1,59 @@
-# Kotor 1 Trainer CSharp
-basic windows form application using memory.dll in C# for one of my favourite games knights of the old republic
+✨ Features
 
-to enable cheats you need to go to your game directory and find the file called swkotorini
-open it in a text editor like notepad++ or any of your choice 
-under the game options you need to write EnableCheats = 1 and save the file 
+Automatic Cheat Execution
+Select a cheat, and the tool will:
 
-after that you will now have access to the games command console by pressing ` 
-now every option within my trainer will now work 
+Focus kotor.exe
 
-any bugs please leave a reply on my github repositroy for me to fix or if you have any suggestions 
-or would like to contribute to the development of the trainer for kotor please let me know 
-if people really like this over having to manually type everything in i may consider 
-dooing the same for kotor 2 but havent yet decided 
+Open the in-game console
 
-enjoy & May the force be with you!
+Input the chosen cheat command (e.g., givecomspikes)
+
+Press Enter
+
+85% Cheat Coverage
+Most known cheat codes are already implemented, with plans to support 100%.
+
+Auto Game Detection
+Automatically scans for swkotor.exe and confirms connection with a message box + status display.
+
+Memory-Based Cheats
+Some cheats work via memory addresses/pointers (tested on the Steam version—may vary with other clients).
+
+Lightweight & Transparent
+
+No obfuscation or hidden protections
+
+No antivirus conflicts
+
+100% open source
+
+🖥️ Why I Built This
+
+After many vanilla playthroughs, I started experimenting with cheats/mods. Constantly alt-tabbing to search and type codes ruined the flow. This project keeps everything in one place, making cheats quick and seamless to use.
+
+🚀 Getting Started
+
+Clone or download this repo.
+
+Open the project in Visual Studio (or your preferred IDE).
+
+Build and run the application.
+
+Launch KOTOR 1 and select your cheat from the app.
+
+📂 Project Status
+
+✅ ~85% of cheat codes implemented
+
+🔄 Remaining codes will be added over time
+
+🤝 Contributions welcome!
+
+🤝 Contributing
+
+Pull requests are welcome! Whether you want to add cheats, fix bugs, or improve the UI, feel free to fork and submit your changes.
+
+📜 License
+
+This project is open source and available under the [MIT License](https://chatgpt.com/c/68cfedb2-7b60-8320-a0e2-91a57cf3286f)
