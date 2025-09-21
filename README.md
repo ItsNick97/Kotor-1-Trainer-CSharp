@@ -36,9 +36,7 @@ After many vanilla playthroughs, I started experimenting with cheats/mods. Const
 
 Clone or download this repo.
 
-Open the project in Visual Studio (or your preferred IDE).
-
-Build and run the application.
+Open the KotorTrainer.exe
 
 Launch KOTOR 1 and select your cheat from the app.
 
