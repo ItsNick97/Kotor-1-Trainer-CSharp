@@ -1,0 +1,21 @@
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\KOTOR Trainer.exe
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\KOTOR Trainer.deps.json
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\KOTOR Trainer.runtimeconfig.json
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\KOTOR Trainer.dll
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\KOTOR Trainer.pdb
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\Memory.dll
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\Memory.pdb
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\bin\Debug\net8.0-windows\Memory.xml
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.csproj.AssemblyReference.cache
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR_Trainer.Form1.resources
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.csproj.GenerateResource.cache
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.AssemblyInfoInputs.cache
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.AssemblyInfo.cs
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.csproj.CoreCompileInputs.cache
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Tr.15E0AF11.Up2Date
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.dll
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\refint\KOTOR Trainer.dll
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.pdb
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\KOTOR Trainer.genruntimeconfig.cache
+C:\Users\Nick\source\repos\KOTOR Trainer\KOTOR Trainer\obj\Debug\net8.0-windows\ref\KOTOR Trainer.dll
